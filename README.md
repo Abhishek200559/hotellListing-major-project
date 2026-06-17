@@ -19,7 +19,13 @@ Responsive UI built with EJS templating and CSS
 
 Tech Stack
 
-LayerTechnologyBackendNode.js, Express.jsDatabaseMongoDB (Mongoose)TemplatingEJSAuthPassport.js (session-based)File StorageCloudinary, MulterStylingCSS, Bootstrap
+Layer : Technology
+Backend : Node.js, Express.js
+Database: MongoDB (Mongoose)
+Templating :  EJS
+Auth:  Passport.js (session-based)
+File Storage:  Cloudinary, Multer
+Styling:  CSS, Bootstrap
 
 Project Structure
 
@@ -36,9 +42,7 @@ Project Structure
 └── schema.js       # Joi validation schemas
 
 Getting Started
-
 Prerequisites
-
 
 Node.js (v16+)
 MongoDB Atlas account (or local MongoDB instance)
@@ -46,34 +50,24 @@ Cloudinary account (for image uploads)
 
 
 Installation
-
-
 Clone the repository
-
 
 bash   git clone https://github.com/Abhishek200559/hotellListing-major-project.git
    cd hotellListing-major-project
 
-
 Install dependencies
-
-
 bash   npm install
-
-
 Create a .env file in the root directory with the following variables:
 
 
-   ATLASDB_URL=your_mongodb_connection_string
-   CLOUD_NAME=your_cloudinary_cloud_name
-   CLOUD_API_KEY=your_cloudinary_api_key
-   CLOUD_API_SECRET=your_cloudinary_api_secret
-   SECRET=your_session_secret
+   ATLASDB_URL=mongodb_connection_string
+   CLOUD_NAME=cloudinary_cloud_name
+   CLOUD_API_KEY=cloudinary_api_key
+   CLOUD_API_SECRET=cloudinary_api_secret
+   SECRET=session_secret
 
 
 Start the server
-
-
 bash   node app.js
 
 
@@ -86,4 +80,4 @@ Future Improvements
 Add payment gateway integration for bookings
 Implement search and filter functionality for listings
 Add wishlist/favorites feature for guests
-Migrate frontend to a component-based framework
+Migrate the frontend to a component-based framework
